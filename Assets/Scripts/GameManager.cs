@@ -5,14 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    private int score;
+    public static int muertes = 0;
 
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            score = 0;
+            muertes = 0;
             DontDestroyOnLoad(gameObject);
         }
         else

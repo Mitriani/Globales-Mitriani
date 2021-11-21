@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannonController : MonoBehaviour
+public class LaserController : MonoBehaviour
 {
     [SerializeField] private GameObject rayOrigin;
     [SerializeField] private float velocidad;
@@ -27,6 +27,7 @@ public class CannonController : MonoBehaviour
         {
             Debug.Log("****** PERDISTE ******");
             player.transform.position = posicionInicial;
+            Debug.Log("MUERTES: " + GameManager.muertes++);
         }
     }
 
