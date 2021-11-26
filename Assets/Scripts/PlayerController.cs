@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rbPlayer;
-    private float speed = 9;
+    private float speed = 7;
     private bool isDead = false;
     private float contador = 0;
     void Start()

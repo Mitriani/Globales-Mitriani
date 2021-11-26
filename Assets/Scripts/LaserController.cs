@@ -25,9 +25,8 @@ public class LaserController : MonoBehaviour
 
         if(Physics.Raycast(rayOrigin.transform.position, rayOrigin.transform.TransformDirection(Vector3.left), out hit, 10))
         {
-            Debug.Log("****** PERDISTE ******");
             player.transform.position = posicionInicial;
-            Debug.Log("MUERTES: " + GameManager.muertes++);
+            Debug.Log("VIDAS RESTANTES: " + --GameManager.vidas);
         }
     }
 
